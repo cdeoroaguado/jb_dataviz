@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
+from io import BytesIO
 
 # Cargar los datos
-file_path = 'C:/Users/cdeor/OneDrive/Documentos/Jbook_CienciaDatos/jbook_dataviz/app_streamlit/Base_Financiero.xlsx'
+file_path = 'https://github.com/cdeoroaguado/jb_dataviz/blob/main/Base_Financiero.xlsx'
 finances_df = pd.read_excel(file_path, sheet_name='Finanzas')
 
 # Sidebar para el filtro de bancos
